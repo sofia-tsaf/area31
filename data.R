@@ -1,7 +1,6 @@
 ## Preprocess data, write TAF data tables
 
-## Before: Area37cuyrrentsofia.csv,
-##         EffortindexRousseaAugNominal.csv (bootstrap/data)
+## Before: Area31Catches.csv, EffortindexRousseaAugNominal.csv (bootstrap/data)
 ## After:  catch_by_stock.png, catch_relative.png, catch_total.png,
 ##         driors_2.png, input.rds (data)
 
@@ -17,7 +16,7 @@ library(tidyr)   # nest, pivot_longer
 mkdir("data")
 
 ## Read catch data, convert to tibble (long format)
-catch <- read.csv("bootstrap/data/Area37cuyrrentsofia.csv")
+catch <- read.csv("bootstrap/data/Area31Catches.csv")
 catch <- catch %>%
   pivot_longer(-c(Year, Total), names_to="stock", values_to="capture") %>%
   filter(!is.na(Year)) %>%
