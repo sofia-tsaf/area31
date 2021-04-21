@@ -5,7 +5,7 @@
 ##         status_by_year.png, status_sofia.png, status_sraplus.png,
 ##         stock_posterior.pdf, stock_timeseries.pdf (report)
 
-library(icesTAF)
+library(TAF)
 library(dplyr)        # mutate
 library(egg)          # ggarrange
 library(ggplot2)

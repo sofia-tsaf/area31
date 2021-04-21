@@ -4,7 +4,7 @@
 ## After:  catch_by_stock.png, catch_relative.png, catch_total.png,
 ##         driors_2.png, input.rds (data)
 
-library(icesTAF)
+library(TAF)
 library(dplyr)   # filter, group_by, left_join, mutate, summarise, ungroup
 library(ggplot2)
 library(janitor) # clean_names

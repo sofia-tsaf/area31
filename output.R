@@ -4,7 +4,7 @@
 ## After:  stock_tables/*.csv, all_effort.txt, current_status.csv, results.rds,
 ##         stock_timeseries.csv (output)
 
-library(icesTAF)
+library(TAF)
 library(dplyr)   # case_when, count, group_by, select, filter, mutate
 library(tidyr)   # pivot_wider, unnest
 
